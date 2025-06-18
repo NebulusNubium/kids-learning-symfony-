@@ -1,8 +1,14 @@
 /* général */
+
+
 body {
     margin: 0;
     color: #333b4a;
     background-color: #eceff0;
+    font-family: "Mulish", sans-serif;
+}
+h1,h2,h3{
+    font-family: "Nunito", sans-serif;
 }
 footer, nav{
     background-color: #333b4a;
@@ -62,7 +68,7 @@ h1 {
     border-radius: 5px;
 }
 
-/* Main - Temoin */
+/* Main - Temoin/home */
 #temoin{
     display: flex;
     flex-direction: column;
@@ -127,4 +133,17 @@ img{
 }
 .text-footer{
     text-align: center;
+}
+
+/* Main - Cours */
+
+#cours>p{
+    text-align: center;
+}
+#cours>.cards>.card{
+    text-align: center;
+    padding-top: 1rem;
+}
+#cours>.cards>.card>.btn-decouvrir{
+    margin-top: 1rem;
 }

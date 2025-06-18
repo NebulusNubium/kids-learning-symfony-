@@ -2,5 +2,35 @@
 
 {% block title %}Hello CoursController!{% endblock %}
 {% block main %}
-<h1>Cours</h1>
+<section id="cours">
+    <h2>Nos Cours</h2>
+    <p>Apprenez à votre rythme avec nos cours en ligne</p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="image-cours"><img src="{{asset('img/maths.jpeg')}}" alt="maths"></div>
+            <div class="card-text">
+                    <p class="cours-titre"><strong> Mathématiques </strong></p>
+                    <p>"Ma fille" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore consectetur nostrum totam cumque saepe ullam!</p>
+            </div>
+            <a class="btn-decouvrir" href="{{path("contact")}}">Démarrer l'apprentissage</a>
+        </div>
+                <div class="card">
+            <div class="image-cours"><img src="{{asset('img/science.jpeg')}}" alt="science"></div>
+            <div class="card-text">
+                    <p class="cours-titre"><strong> Sciences </strong></p>
+                    <p>"Ma fille" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore consectetur nostrum totam cumque saepe ullam!</p>
+            </div>
+            <a class="btn-decouvrir" href="{{path("contact")}}">Démarrer l'apprentissage</a>
+        </div>
+                <div class="card">
+            <div class="image-cours"><img src="{{asset('img/literature.jpeg')}}" alt="lité"></div>
+            <div class="card-text">
+                    <p class="cours-titre"><strong> Littérature </strong></p>
+                    <p>"Ma fille" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore consectetur nostrum totam cumque saepe ullam!</p>
+            </div>
+            <a class="btn-decouvrir" href="{{path("contact")}}">Démarrer l'apprentissage</a>
+        </div>
+    </div>
+</section>
 {% endblock %}
