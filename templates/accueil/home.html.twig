@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page D'Accueil{% endblock %}
+
+{% block main %}
+    <section id="temoin">
+        <div class="date"><p>Aujourd'hui on est le </p></div>
+        <div class="temoin-title">
+            <h2>Témoignages</h2>
+            <p>Découvrez ce que les gens disent de notre plateforme</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="photo-container">
+                    <div class="photo"><img src="{{asset('img/parent-1.jpeg')}}" alt=""></div>
+                </div>
+                <div class="card-text">
+                    <p>"Ma fille"</p>
+                    <p class="nom">Thérèse Dupont</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="photo-container">
+                    <div class="photo"><img src="{{asset('img/parent-2.jpeg')}}" alt=""></div>
+                </div>
+                <div class="card-text">
+                    <p>"Ma fille"</p>
+                    <p class="nom">Thérèse Dupont</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="photo-container">
+                    <div class="photo"><img src="{{asset('img/parent-3.jpeg')}}" alt=""></div>
+                </div>
+                <div class="card-text">
+                    <p>"Ma fille"</p>
+                    <p class="nom">Thérèse Dupont</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

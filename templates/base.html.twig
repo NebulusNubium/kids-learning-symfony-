@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        {% endblock %}
+
+        {% block javascripts %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+    <body>
+    {% block nav %}
+        <nav>
+            <div class="logo-top"><img src="{{asset('img/Logo.png')}}" alt="logo"></div>
+            <ul>
+                <li><a href="{{path('home')}}">Accueil</a></li>
+                <li><a href="{{path("cours")}}">Cours</a></li>
+                <li><a href="{{path("ressources")}}">Ressources</a></li>
+                <li><a href="{{path("contact")}}">Contact</a></li>
+            </ul>
+        </nav>
+    {% endblock %}
+    {% block banner %}
+        <section id="banner">
+            <h1>Bienvenue sur Kids Learning</h1>
+            <a href="{{path("cours")}}" class="btn-decouvrir">Découvrir</a>
+        </section>
+    {% endblock %}
+    {% block main %}{% endblock %}
+    <footer>
+        <div class="logo-bot"><img src="{{asset('img/Logo.png')}}" alt="logo"></div>
+        <div class="text-footer">
+            <p>Nous sommes ici pour répéondre à vos questions et inquiétudes.</p>
+            <p>info@kids-learning.fr</p>
+            <p>02 02 02 02 02</p>
+            <p><a href="{{path("contact")}}">Formulaire de contact</a></p>
+        </div>
+        <p>Copyright 2023 Kids Learning. Tous Droits Réservés.</p>
+    </footer>
+    </body>
+</html>

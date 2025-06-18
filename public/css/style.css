@@ -1,0 +1,111 @@
+/* général */
+body {
+    margin: 0;
+    color: #333b4a;
+    background-color: #eceff0;
+}
+footer, nav{
+    background-color: #333b4a;
+    color:white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+}
+/* header */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid #d45746;
+    padding-top: 2rem;
+}
+.logo-top{
+    width: 20%;
+}
+img{
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    gap: 2rem;
+}
+li{
+    list-style: none;
+}
+/* banner */
+#banner{
+    text-align: center;
+    background-image: url('../img/banner.jpeg');
+    background-position: center;
+    object-fit: contain;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+
+}
+h1 {
+    font-size: 5rem;
+    margin-top: 0;
+}
+.btn-decouvrir{
+    background-color: #d45746;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Main - Temoin */
+#temoin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.cards{
+    display: flex;
+    gap: 0.1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photo-container{
+    background-color: white;
+    border-radius: 50%;
+}
+.photo{
+    width: 60%;
+    border-radius: 50%;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+.logo-bot{
+    width: 20%;
+}
+img{
+    width: 100%;
+}
+.text-footer{
+    text-align: center;
+}
