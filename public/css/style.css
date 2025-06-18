@@ -75,23 +75,42 @@ h2{
 }
 .cards{
     display: flex;
-    gap: 0.1rem;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 3rem 0;
 }
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    width: 30%;
+    padding: 0 1rem 1rem 1rem;
 }
 .photo-container{
     background-color: white;
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50%);
 }
 .photo{
-    width: 60%;
-    border-radius: 50%;
+    width: 100%;
 }
-
-
+.photo>img{
+    border-radius: 60%;
+    width: 90px;
+    height:90px;
+    transform: translate(5%) translateY(5%);
+    object-fit: cover;
+}
+.card-text>p:not(.nom){
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.nom{
+    text-align: end;
+}
 /* footer */
 footer{
     display: flex;

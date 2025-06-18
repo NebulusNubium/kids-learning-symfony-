@@ -11,8 +11,10 @@ final class AccueilController extends AbstractController
     #[Route('/', name: 'home')]
     public function index(): Response
     {
+        $date = new \DateTime();
         return $this->render('accueil/home.html.twig', [
             'controller_name' => 'AccueilController',
+            'current_date' => $date
         ]);
     }
 }
