@@ -4,5 +4,21 @@
 {% block title %}Contact Us!{% endblock %}
 
 {% block main %}
-<h1>Contact Us</h1>
+<form class="contact-form" action="{{path("contact")}}" method="POST">
+<h2>Contactez-nous</h2>
+
+<label for="nom">Nom :</label>
+<input type="text" id="nom" name="nom" required>
+
+<label for="email">Adresse e-mail :</label>
+<input type="email" id="email" name="email" required>
+
+<label for="sujet">Sujet :</label>
+<input type="text" id="sujet" name="sujet" required>
+
+<label for="message">Message :</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+<button type="submit">Envoyer</button>
+</form>
 {% endblock %}

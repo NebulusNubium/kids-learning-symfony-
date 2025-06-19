@@ -11,7 +11,7 @@ h1,h2,h3{
     font-family: "Nunito", sans-serif;
 }
 footer, nav{
-    background-color: #333b4a;
+    background-color: hsl(219, 18%, 25%);
     color:white;
 }
 a{
@@ -55,7 +55,7 @@ li{
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
-
+    margin-bottom: 2rem;
 }
 h1 {
     font-size: 5rem;
@@ -124,6 +124,7 @@ footer{
     align-items: center;
     font-size: 0.8rem;
     padding-top: 1rem;
+    margin-top: 2rem;
 }
 .logo-bot{
     width: 20%;
@@ -146,4 +147,41 @@ img{
 }
 #cours>.cards>.card>.btn-decouvrir{
     margin-top: 1rem;
+}
+
+/* formulaire */
+
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.contact-form h2 {
+    margin-top: 0;
+}
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #005fa3;
 }
